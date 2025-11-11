@@ -1,0 +1,80 @@
+body {
+    font-family: TikTok Sans, monospace;
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    background-color: #2d2847;
+    text-align: center;
+    margin: 20px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+
+    border-radius: 8px;
+    border: 1px solid #d5d8dc;
+    padding: 20px;
+}
+
+h4 {
+    margin-bottom: 0;
+}
+
+table, tbody, tr, th, td {
+    margin: 5px;
+    padding: 2px;
+    border: 1px solid #d5d8dc;
+    border-collapse: collapse;
+}
+
+ul {
+    list-style-position: inside;
+    text-align: center;
+    padding-left: 0;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #8b7fd6;
+}
+
+.projects {
+    padding-bottom: 10px;
+}
+
+.project_link {
+        background-color: #181C29;
+        color: white;
+        text-decoration: none;
+        padding: 10px 22px;
+        border-radius: 20px;
+        font-size: 14px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.3s;
+}
+
+.footer {
+    text-transform: uppercase;
+    border-top: 1px solid #d5d8dc;
+    padding: 10px;
+}
