@@ -126,6 +126,16 @@ input, select, textarea {
     cursor: pointer;
 }
 
+input[type="radio"] {
+    margin: 0;
+    transform: translateY(1px);
+    cursor: pointer;
+}
+
+.radio {
+    gap: 5px;
+}
+
 .checkbox {
     display: flex;
     align-items: center;
