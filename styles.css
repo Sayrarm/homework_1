@@ -30,6 +30,10 @@ table, tbody, tr, th, td {
     border-collapse: collapse;
 }
 
+.table {
+    margin-bottom: 20px;
+}
+
 ul, form {
     list-style-position: inside;
     padding-left: 0;
@@ -59,7 +63,12 @@ a:hover,
 }
 
 .projects {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.fixed-line {
+    margin: 10px;
+    border: 1px inset #8b7fd6;
 }
 
 .project_link,
@@ -80,8 +89,6 @@ a:hover,
 
 .footer {
     text-transform: uppercase;
-    border-top: 1px solid #d5d8dc;
-    margin: 10px;
 }
 
 .footer_container {
@@ -99,4 +106,18 @@ input, select, textarea {
     font-family: TikTok Sans, monospace;
     font-size: 14px;
     font-weight: 300;
+}
+
+#checkbox {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    transform: translateY(1px);
+    cursor: pointer;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
