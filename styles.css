@@ -10,6 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
     max-width: 800px;
     margin: 0 auto;
     border-radius: 8px;
