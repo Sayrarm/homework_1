@@ -14,7 +14,7 @@ body {
     max-width: 800px;
     margin: 0 auto;
     border-radius: 8px;
-    border: 1px solid #d5d8dc;
+    border: 1px solid #8b7fd6;
     padding: 20px;
 }
 
@@ -50,18 +50,6 @@ nav, .button_container {
     gap: 10px;
 }
 
-a,
-.button_submit {
-    text-decoration: none;
-    color: #d5d8dc;
-    transition: color 0.3s;
-}
-
-a:hover,
-.button_submit:hover {
-    color: #8b7fd6;
-}
-
 .projects {
     margin-bottom: 20px;
 }
@@ -77,20 +65,36 @@ a:hover,
     margin: 25px auto;
 }
 
+.nav_button {
+    text-decoration: none;
+    color: inherit;
+}
+
 .project_link,
 .button_submit {
-        background-color: #181C29;
-        color: #d5d8dc;
-        text-decoration: none;
-        padding: 10px 22px;
-        border-radius: 20px;
-        text-transform: uppercase;
-        cursor: pointer;
-        transition: 0.3s;
+    background-color: #181C29;
+    color: #d5d8dc;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s;
 }
 
 .button_submit {
-    padding: 10px 15px;
+    background-color: #181C29; /* ваш цвет */
+    border: none;
+    box-shadow: none;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.nav_button:hover,
+.project_link:hover,
+.button_submit:hover {
+    color: #8b7fd6;
 }
 
 .footer {
