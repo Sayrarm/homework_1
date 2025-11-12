@@ -173,7 +173,7 @@
                 отправить сообщение по обратной связи: <br>
             </p>
 
-            <form action="#" method="POST">
+            <form id="my_form" action="#" method="POST">
                 <label for="name_of_guest">Ваше имя:</label>
                 <input id="name_of_guest" type="text" name="name" placeholder="Иван" class="input_guest" required>
 
@@ -237,5 +237,13 @@
         </div>
     </footer>
 </div>
+
+<script>
+    document.getElementById('my_form').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        alert('Внимание, бекэнд не подключен! Поэтому сообщение по факту никуда не отправляется. Если хотите связаться со мной, напишите в telegram! ^_^');
+    });
+</script>
 </body>
 </html>
