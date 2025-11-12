@@ -44,7 +44,7 @@ ul, form {
     text-align: left;
 }
 
-nav {
+nav, .button_container {
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -66,9 +66,15 @@ a:hover,
     margin-bottom: 20px;
 }
 
-.fixed-line {
+.fixed_line {
     margin: 10px;
     border: 1px inset #8b7fd6;
+}
+
+.line_for_project {
+    border: 1px dashed #8b7fd6;
+    width: 50%;
+    margin: 25px auto;
 }
 
 .project_link,

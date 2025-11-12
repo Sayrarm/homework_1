@@ -21,16 +21,19 @@
     </nav>
 
     <main class="container">
-        <div>
-        <h1>Обо мне</h1>
-        <img src="images/star-wars-hello-there.gif" width="400" height="200" alt="Hello there!">
 
-        <p class="text_for_projects">Привет! Меня зовут Ольга, и я начинающий frontend-разработчик. <br>
-            Мои навыки в программировании небольшие, <br>
-            но стараюсь самосовершенствоваться и делать небольшие проекты!</p>
+        <div class="fixed_line"></div>
+
+        <div>
+            <h1>Обо мне</h1>
+            <img src="images/star-wars-hello-there.gif" width="400" height="200" alt="Hello there!">
+
+            <p class="text_for_projects">Привет! Меня зовут Ольга, и я начинающий frontend-разработчик. <br>
+                Мои навыки в программировании небольшие, <br>
+                но стараюсь самосовершенствоваться и делать небольшие проекты!</p>
         </div>
 
-        <div class="fixed-line"></div>
+        <div class="fixed_line"></div>
 
         <div class="table">
             <h2>Мое образование</h2>
@@ -62,7 +65,7 @@
             </table>
         </div>
 
-        <div class="fixed-line"></div>
+        <div class="fixed_line"></div>
 
         <div class="skills">
             <h2>Мои навыки</h2>
@@ -75,7 +78,7 @@
             </ul>
         </div>
 
-        <div class="fixed-line"></div>
+        <div class="fixed_line"></div>
 
         <div class="projects">
             <h2>Мои проекты</h2>
@@ -87,6 +90,8 @@
                 <a class="project_link" href="https://sayrarm.github.io/cookies/" target="_blank">COOKIES</a>
             </div>
 
+            <div class="line_for_project"></div>
+
             <div>
                 <h3>Интернет-магазин новогодних игрушек</h3>
                 <p>На этом сайте можно посмотреть список елочных игрушек, <br>
@@ -96,6 +101,8 @@
                    href="https://rolling-scopes-school.github.io/sayrarm-JSFE2024Q4/christmas-shop/" target="_blank">CHRISTMAS
                     SHOP</a>
             </div>
+
+            <div class="line_for_project"></div>
 
             <div>
                 <h3>Игра "Нонограммы"</h3>
@@ -109,6 +116,8 @@
                    target="_blank">NONOGRAMS</a>
             </div>
 
+            <div class="line_for_project"></div>
+
             <div>
                 <h3>Инструмент принятия решений (колесо фортуны)</h3>
                 <p>Благодаря колесу фортуны можно выбрать вариант, <br>
@@ -121,6 +130,8 @@
                    href="https://rolling-scopes-school.github.io/sayrarm-JSFE2024Q4/decision-making-tool/"
                    target="_blank">DECISION MAKING TOOL</a>
             </div>
+
+            <div class="line_for_project"></div>
 
             <div>
                 <h3>Калькулятор коммуналки</h3>
@@ -148,9 +159,10 @@
                 <a class="project_link" href="https://sayrarm.github.io/communal_apartment/" target="_blank">Калькулятор
                     Коммуналки</a>
             </div>
+
         </div>
 
-        <div class="fixed-line"></div>
+        <div class="fixed_line"></div>
 
         <div>
             <h2>Форма обратной связи</h2>
@@ -178,8 +190,6 @@
 
                 <textarea id="text_from_guest" name="message" rows="3" cols="40"
                           placeholder="Напишите комментарий здесь..."></textarea>
-                <br>
-                <input class="button_submit" type="submit" value="Отправить">
 
                 <br>
                 <div class="checkbox">
@@ -187,12 +197,18 @@
                     <input id="checkbox" type="checkbox" value="true">
                 </div>
 
+                <br>
+                <div class="button_container">
+                    <input class="button_submit" type="submit" value="Отправить">
+                    <input class="button_submit" type="reset" value="Очистить форму">
+                </div>
+
 
             </form>
 
         </div>
 
-        <div class="fixed-line"></div>
+        <div class="fixed_line"></div>
 
     </main>
     <footer class="footer">
