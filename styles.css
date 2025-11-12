@@ -30,7 +30,7 @@ table, tbody, tr, th, td {
     border-collapse: collapse;
 }
 
-ul {
+ul, form {
     list-style-position: inside;
     padding-left: 0;
     display: flex;
@@ -46,13 +46,15 @@ nav {
     gap: 10px;
 }
 
-a {
+a,
+.button_submit {
     text-decoration: none;
     color: #d5d8dc;
     transition: color 0.3s;
 }
 
-a:hover {
+a:hover,
+.button_submit:hover {
     color: #8b7fd6;
 }
 
@@ -60,16 +62,20 @@ a:hover {
     margin-bottom: 10px;
 }
 
-.project_link {
+.project_link,
+.button_submit {
         background-color: #181C29;
         color: #d5d8dc;
         text-decoration: none;
         padding: 10px 22px;
         border-radius: 20px;
-        font-size: 14px;
         text-transform: uppercase;
         cursor: pointer;
         transition: 0.3s;
+}
+
+.button_submit {
+    padding: 10px 15px;
 }
 
 .footer {
@@ -89,3 +95,8 @@ a:hover {
     align-items: center;
 }
 
+input, select, textarea {
+    font-family: TikTok Sans, monospace;
+    font-size: 14px;
+    font-weight: 300;
+}
