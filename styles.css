@@ -24,13 +24,16 @@ h3, h4 {
 }
 
 table, tbody, tr, th, td {
-    margin: 0 auto;
     padding: 2px;
     border: 1px solid #d5d8dc;
     border-collapse: collapse;
 }
 
 .table {
+    margin-bottom: 20px;
+}
+
+.projects {
     margin-bottom: 20px;
 }
 
@@ -48,10 +51,6 @@ nav, .button_container {
     display: flex;
     justify-content: center;
     gap: 10px;
-}
-
-.projects {
-    margin-bottom: 20px;
 }
 
 .fixed_line {
@@ -83,7 +82,7 @@ nav, .button_container {
 }
 
 .button_submit {
-    background-color: #181C29; /* ваш цвет */
+    background-color: #181C29;
     border: none;
     box-shadow: none;
     outline: none;
