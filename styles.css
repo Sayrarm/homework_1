@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: TikTok Sans, monospace;
     font-size: 16px;
@@ -16,6 +20,10 @@ body {
 
     border-radius: 8px;
     border: 1px solid #8b7fd6;
+}
+
+.container {
+    position: relative;
 }
 
 h3, h4 {
@@ -91,6 +99,51 @@ nav, .button_container {
 .project_link:hover,
 .button_submit:hover {
     color: #8b7fd6;
+}
+
+.top_button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 1000;
+
+    /* Сначала скрываем кнопку */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transform-origin: center;
+}
+
+/* Класс для показа кнопки */
+.top_button.visible {
+    opacity: 1;
+    visibility: visible;
+}
+.top_button img {
+    display: block;
+    width: 40px; /* Настройте размер */
+    height: 40px;
+}
+
+.top_button:hover {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .footer {

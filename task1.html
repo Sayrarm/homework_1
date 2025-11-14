@@ -13,7 +13,7 @@
 </head>
 <body>
 
-    <nav>
+    <nav id="navigation">
         <div>НАВИГАЦИЯ:</div>
         <a class="nav_button" href="index.html">ГЛАВНАЯ</a>
         <a class="nav_button" href="task1.html">ОБО МНЕ</a>
@@ -217,6 +217,10 @@
 
         <div class="fixed_line"></div>
 
+        <a class="top_button" href="#navigation">
+            <img src="images/arrow.svg" alt="arrow">
+        </a>
+
     </main>
     <footer class="footer">
         <div class="footer_container">
@@ -235,11 +239,44 @@
     </footer>
 
 <script>
+    //текст для alert-сообщения после прожатия "отправить"
     document.getElementById('my_form').addEventListener('submit', function(e) {
         e.preventDefault();
 
         alert('Внимание, бекэнд не подключен! Поэтому сообщение по факту никуда не отправляется. Если хотите связаться со мной, напишите в telegram! ^_^');
     });
+
+    //кнопка "наверх"
+    const topButton = document.querySelector('.top_button');
+
+    //задаем позицию кнопки
+    function positionButton() {
+        const container = document.querySelector('.container');
+        const containerRect = container.getBoundingClientRect();
+
+        let leftPosition = containerRect.right + 40;
+
+        //если при сужении страницы кнопка теряется, меняем ее положение
+        if (leftPosition + 50 > window.innerWidth) {
+            leftPosition = window.innerWidth - 80;
+        }
+
+        topButton.style.left = `${leftPosition}px`;
+    }
+
+    //когда кнопка появляется
+    function toggleTopButton() {
+        if (window.pageYOffset > 300) {
+            topButton.classList.add('visible');
+        } else {
+            topButton.classList.remove('visible');
+        }
+    }
+
+    window.addEventListener('scroll', toggleTopButton);
+    window.addEventListener('resize', positionButton);
+    positionButton();
+    toggleTopButton();
 </script>
 </body>
 </html>
